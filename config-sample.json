@@ -1,0 +1,6 @@
+{
+  "homeName": "...",
+  "authToken": "...",
+  "maxTemperature": 21,
+  "secondsBetweenChecks": 60
+}
