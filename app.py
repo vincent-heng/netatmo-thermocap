@@ -12,12 +12,15 @@ if __name__ == '__main__':
     with open('config.json', 'r') as f:
         config = json.load(f)
 
-    bearer_auth_token = config['authToken']
+    client_id = config['clientId']
+    client_secret = config['clientSecret']
+    access_token = config['accessToken']
+    refresh_token = config['refreshToken']
     home_name = config['homeName']
     cap_sp_temp = config['maxTemperature']
     seconds_between_checks = config['secondsBetweenChecks']
 
-    client = NetatmoClient(bearer_auth_token)
+    client = NetatmoClient(client_id, client_secret, access_token, refresh_token)
 
     home = client.get_home_by_name(home_name)
     home_id = home.id

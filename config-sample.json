@@ -1,6 +1,9 @@
 {
   "homeName": "...",
-  "authToken": "...",
+  "clientId": "...",
+  "clientSecret": "...",
+  "accessToken": "...",
+  "refreshToken": "...",
   "maxTemperature": 21,
   "secondsBetweenChecks": 60
 }
